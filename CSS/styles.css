@@ -1,0 +1,117 @@
+/* Fondo general oscuro con brillo */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #0c0c0c;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Títulos principales */
+.titulo-seccion {
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+  font-weight: bold;
+}
+
+/* Cards y sombras con efecto neón */
+.sombra {
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sombra:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #00d4ff;
+}
+
+#carouselIA {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#carouselIA .carousel-item {
+  height: 100vh;
+}
+
+#carouselIA .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  height: 100%;
+}
+
+.card img {
+  height: 250px;       
+  object-fit: cover;   
+  width: 100%;
+}
+
+.card-group, .row .col {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Botones personalizados */
+.btn-primary {
+  background-color: #00d4ff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00a9cc;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Scroll suave entre secciones */
+html {
+  scroll-behavior: smooth;
+}
+.toast{
+  background: linear-gradient(135deg, #0a0f2c, #001f4d);
+  color: #00e0ff;
+  border: 1px solid rgba(0, 224, 255, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.5);
+  backdrop-filter: blur(10px);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toast.toast-header {
+  background: rgba(0, 224, 255, 0.1);
+  color: #00e0ff;
+  border-bottom: 1px solid rgba(0, 224, 255, 0.2);
+}
+
+.toast.toast-body {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b8faff;
+}
+
+.toast.btn-close-white {
+  filter: invert(1);
+}
+
+.toast:hover {
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.8);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.pagination {
+  justify-content: center;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Bootstrap</title>
+  <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+
+</head>
+<body>
+
+   <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-light" href="#">🤖 Mundo IA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aplicaciones">Aplicaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <section id="inicio">
+    <div id="carouselIA" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../Imagenes/IA.jpg" class="d-block w-100" alt="IA 1">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+            <h3>Bienvenido al Mundo de la Inteligencia Artificial</h3>
+            <p>Descubre cómo la IA está transformando nuestro futuro.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Imagenes/IA2.jpeg" class="d-block w-100" alt="IA 2">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+            <h3>Innovación y Tecnología</h3>
+            <p>Desde los algoritmos hasta los robots autónomos.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Imagenes/IA3.jpg" class="d-block w-100" alt="IA 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+            <h3>El futuro está aquí</h3>
+            <p>Aprende, crea y experimenta con la IA.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIA" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIA" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section id="aplicaciones" class="container py-5">
+    <h2 class="text-center mb-4 titulo-seccion">Aplicaciones de la Inteligencia Artificial</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 sombra">
+          <img src="../Imagenes/AsistenteVirtual.webp" class="card-img-top" alt="Asistentes virtuales">
+          <div class="card-body">
+            <h5 class="card-title">Asistentes Virtuales</h5>
+            <p class="card-text">Alexa, Siri y ChatGPT son ejemplos de IA que entienden lenguaje humano y responden inteligentemente.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 sombra">
+          <img src="../Imagenes/MedicinaIA.webp" class="card-img-top" alt="IA en medicina">
+          <div class="card-body">
+            <h5 class="card-title">Medicina Inteligente</h5>
+            <p class="card-text">La IA ayuda a diagnosticar enfermedades y predecir tratamientos personalizados con gran precisión.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 sombra">
+          <img src="../Imagenes/AutosAutonomos.webp" class="card-img-top" alt="Conducción autónoma">
+          <div class="card-body">
+            <h5 class="card-title">Autos Autónomos</h5>
+            <p class="card-text">Los vehículos con IA detectan su entorno, toman decisiones y conducen sin intervención humana.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALES -->
+  <div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Definición:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body"> Los asistentes virtuales son programas informáticos basados en inteligencia artificial que interactúan con los usuarios para realizar tareas, responder preguntas y facilitar la vida diaria.
+</div>
+    </div></div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Definición:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">La medicina con inteligencia artificial (IA) se refiere al uso de tecnologías avanzadas que emulan las capacidades cognitivas humanas para mejorar diversos aspectos de la atención sanitaria. Esto incluye el aprendizaje automático y las redes neuronales profundas, que permiten a los sistemas analizar grandes volúmenes de datos médicos y asistir en la toma de decisiones clínicas.</div>
+    </div></div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Definición:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">Los Coches Autónomos, también conocidos como vehículos autónomos o vehículos sin conductor, son automóviles equipados con tecnología avanzada que les permite operar de manera autónoma, sin intervención humana directa, al utilizar sensores, cámaras y sistemas de inteligencia artificial para tomar decisiones y navegar en el entorno.</div>
+    </div></div>
+  </div>
+
+  <!-- ACCORDION -->
+  <section id="preguntas" class="container my-5">
+    <h2 class="text-center mb-4 titulo-seccion">Preguntas Frecuentes</h2>
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+            ¿Qué es la Inteligencia Artificial?
+          </button>
+        </h2>
+        <div id="q1" class="accordion-collapse collapse show">
+          <div class="accordion-body">La inteligencia artificial es una rama de la ciencia informática que diseña tecnología que emule la inteligencia humana. Conozca su origen, funcionamiento, tipos y usos en diferentes ámbitos, así como su importancia y futuro.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+            ¿La IA reemplazará a los humanos?
+          </button>
+        </h2>
+        <div id="q2" class="accordion-collapse collapse">
+          <div class="accordion-body">Aunque la IA está cambiando la forma en que trabajamos y tiene el potencial de reemplazar algunas funciones humanas, no se espera que reemplace a los humanos en todos los trabajos en el corto plazo. La clave estará en cómo se integren estas tecnologías en el entorno laboral y cómo se adapten los trabajadores a las nuevas realidades del mercado. La IA puede ser una herramienta poderosa para mejorar la productividad y la eficiencia, pero el papel humano seguirá siendo crucial en muchas áreas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS BAR -->
+  <div class="container mb-5">
+    <h2 class="text-center titulo-seccion">Avance del desarrollo de la IA</h2>
+    <div class="progress my-3">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 85%;">85%</div>
+    </div>
+  </div>
+
+  <!-- FORMULARIO -->
+  <section id="contacto" class="container mb-5">
+    <h2 class="text-center mb-4 titulo-seccion">Contáctanos</h2>
+    <form class="sombra p-4 rounded bg-dark bg-opacity-50 text-white">
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Correo</label>
+        <input type="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="3" placeholder="Escribe tu duda o comentario..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-info text-white">Enviar</button>
+    </form>
+  </section>
+
+  <!-- TOAST -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert">
+      <div class="toast-header">
+        <strong class="me-auto">Mundo IA</strong>
+        <small>Ahora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">Bienvenido a Mundo IA, aprende y explora el futuro 🚀</div>
+    </div>
+  </div>
+
+    <!-- PAGINATION -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-5 border-top border-info">
+    <p>By Hector Rojas | 2025 | Mundo IA | Creado con ❤️ y tecnología</p>
+  </footer>
+
+
+<script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toastEl = document.getElementById("liveToast");
+    const toast = new bootstrap.Toast(toastEl);
+    toast.show();
+  });
+</script>
+</body>
+</html>
